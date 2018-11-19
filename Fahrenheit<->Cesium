@@ -7,29 +7,29 @@ int main()
 Nachalo:
 cout<<"1.Celsium to Farenhait\n";
 cout<<"2.Farenhait to Celsium\n";
-cout<<"Molq izberete opciq(1-2): ";
+cout<<"Please choose (1-2): ";
 cin>>a;
 if(a<1 || a>2)
 {
-cout<<"Greshka.Nesyshtestvuvashta opciq.\n";
+cout<<"Еrror, no existing option.\n";
 return 1;
 }
 if ( a==1 ) goto Celzii;
 if ( a==2 ) goto Farenhait;
 Celzii:
 {
-    cout<<"Vyvedete gradusite po Celzii: ";
+    cout<<"Enter the degrees Celsius: ";
     cin>>C;
     F=C*1.8+32;
-    cout<<"Gradusite po Farenhait = " <<F<<"\n";
+    cout<<"Fahrenheit degrees = " <<F<<"\n";
     return 0;
 }
 Farenhait:
 {
-    cout<<"Vyvete gradusite po Farenhait: ";
+    cout<<"Enter the degrees Fahrenheit: ";
     cin>>F;
     C=(F-32)/1.8;
-    cout<<"Gradusite po Celzii = " <<C<<"\n";
+    cout<<"Celsius degrees = " <<C<<"\n";
     return 0;
 }
 return 0;
